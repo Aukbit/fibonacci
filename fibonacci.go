@@ -1,5 +1,10 @@
 package fibonacci
 
+// F returns the next fibonacci number
+func F() func() int {
+	return fiboClosure()
+}
+
 func fiboRecursive(n int) int {
 	if n < 0 {
 		return 0
